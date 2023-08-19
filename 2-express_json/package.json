@@ -1,0 +1,24 @@
+{
+  "name": "2-express_json",
+  "version": "1.0.0",
+  "description": "This is an express server for sending response as json data",
+  "main": "index.js",
+  "type": "module",                           
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "json",
+    "request",
+    "response",
+    "backend"
+  ],
+  "author": "saravanan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
