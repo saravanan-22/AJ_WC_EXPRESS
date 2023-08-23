@@ -54,19 +54,7 @@ app.get("/api/products/:id",(req, res)=> {
 
 // query http://localhost:5000/api/products/:id/?category&limit=3
 
-app.get("/api/products/:id",(req, res)=> {
-  // console.log(req.params);             // to identify the id
-  const {id} = req.params
-  let singleProducts = products.find((product) => product.id === Number(id));
-  if(!singleProducts){
-      res.status(400).send(`<h1>Product not found this id:${id}</h1> 
-      <a href="/api/products-details">Click here to go for all product-detail page`)
-  }
-  res.status(200).json(singleProducts);
-
-
-
 
 app.listen(PORT, () => {
-  console.log(`<h1>This server is running in: http://localhost:${PORT}`);
+  console.log(`<h1>This server is running in: http://localhost:${PORT}</h1>`);
 });
