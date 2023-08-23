@@ -52,7 +52,7 @@ app.post("/api/v1/users/create", (req,res)=> {
         console.log(req.body); 
         res.status(201).json({message : "user created successfully" , data : req.body});
     } catch (error) {
-        console.log(error.message);
+        console.log(error.message); 
     }
  
 })
